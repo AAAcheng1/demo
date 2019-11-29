@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
+import Axios from 'axios'
+Vue.prototype.$http = Axios
+
+
 
 export default new Router({
   mode:"history",
@@ -10,16 +14,27 @@ export default new Router({
       path: '/',
       name: 'home',
       components: {
-          header:() => import ('../page/header.vue'),
-          default:() => import ('../components/home.vue'),
-          floor:() => import ('../page/floor.vue')
+        header:() => import ('../page/header.vue'),
+        default:() => import ('../components/home.vue'),
+        floor:() => import ('../page/floor.vue')
       }
     },
     {
-      path: '/ww',
+      path: '/discover/artist',
+      name:"artist",
       components: {
-          default:() => import ('../page/banner.vue'),
-          floor:() => import ('../page/hotdoor.vue')
+        header:() => import ('../page/header.vue'),
+        default: () => import ('../components/artist.vue'),
+        floor:() => import ('../page/floor.vue')
+      }
+    },
+    {
+      path: '/todis',
+      name:"artist",
+      components: {
+        header:() => import ('../page/header.vue'),
+        default: () => import ('../page/todis.vue'),
+        floor:() => import ('../page/floor.vue')
       }
     }
   ]

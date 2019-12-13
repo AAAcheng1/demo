@@ -1,0 +1,404 @@
+.d_box{
+    background: url(../image/wrap4.png) repeat-y center 0;
+    width: 980px;
+    min-height: 700px;
+    margin: 0 auto;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+   &::after{
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+   }
+   .d_left{
+    float: left;
+    width: 100%;
+    margin-right: -270px;
+    .d_l_box{
+        margin-right: 271px;
+        .d_l_wrap{
+            padding: 47px 30px 40px 39px;
+            font-size: 12px;
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            .dl_tou{
+                position: relative;
+                zoom: 1;
+                height: 333px;
+                margin-top: -20px;
+                &::after{
+                    clear: both;
+                    content: '.';
+                    display: block;
+                    height: 0;
+                    visibility: hidden;
+                }
+                .dl_t_m{
+                    overflow: hidden;
+                    h2{
+                        max-width: 75%;
+                        float: left;
+                        height: 34px;
+                        line-height: 24px;
+                        font-weight: normal;
+                        font-size: 24px;
+                        color: #333;
+                    }
+                    h3{
+                        float: left;
+                        max-width: 23%;
+                        padding-left: 10px;
+                        font-size: 14px;
+                        line-height: 32px;
+                        color: #999;
+                        font-weight: normal;
+                    }
+                }
+                .dl_tkuang{
+                    position: absolute;
+                    top: 34px;
+                    left: 0;
+                    display: block;
+                    width: 640px;
+                    height: 300px;
+                    background: url(../image/ban_mask.png);
+                }
+                .dl_geren{
+                    display: block;
+                    position: absolute;
+                    bottom: 18px;
+                    right: 116px;
+                    width: 96px;
+                    height: 32px;
+                    background: url(../image/iconall.png) no-repeat;
+                    background-position: 0 -1156px;
+                }
+                .dl_shou{
+                    display: block;
+                    position: absolute;
+                    bottom: 18px;
+                    right: 20px;
+                    width: 76px;
+                    height: 32px;
+                    background: url(../image/iconall.png) no-repeat;
+                    background-position: 0 -500px;
+                }
+            }
+        }
+    }
+   }
+}
+
+.dl_bul{
+    height: 39px;
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+    background: url(../image/tab.png) no-repeat 0 9999px;;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    &::after{
+        clear: both;
+        content: '.';
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    li{
+        position: relative;
+        left: -1px;
+        float: left;
+        height: 39px;
+        font-size: 14px;
+        .dl_active{
+            // background: url(../image/tab.png) no-repeat 0 9999px;;
+            // background-position: left -90px;
+            em{
+                background: url(../image/tab.png);
+                background-position: right -90px;
+            }
+        }
+        a{
+            float: left;
+            height: 39px;
+            font-size: 14px;
+            background: url(../image/tab.png) no-repeat 0 9999px;;
+            em{
+                height: 37px;
+                width: 134px;
+                padding: 2px 2px 0 0;
+                line-height: 37px;
+                cursor: pointer;
+                text-align: center;
+                float: left;
+                font-size: 14px;
+                // background: url(../image/tab.png);
+                font-weight: 400;
+                background-position: right -90px;
+            }
+            em:hover{
+                background: url(../image/tab.png);
+                background-position: right -90px;
+            }
+        }
+    }
+}
+.dl_bfang{
+    overflow: hidden;
+    .dl_btop{
+        .dl_btops{
+            margin: 20px 0 10px;
+            overflow: hidden;
+            .dl_dqi{
+                float: left;
+                color: #fff;
+                background-position: right -428px;
+                padding: 0 5px 0 0;
+                white-space: nowrap;
+                display: inline-block;
+                height: 31px;
+                line-height: 31px;
+                overflow: hidden;
+                vertical-align: top;
+                text-align: center;
+                cursor: pointer;
+                background: url(../image/button2.png)  no-repeat 0 9999px;
+                i{
+                    padding: 0 7px 0 8px;
+                    color: #fff;
+                    background: url(../image/button2.png)  no-repeat 0 9999px;
+                    background-position: 0 -387px;
+                    display: inline-block;
+                    height: 31px;
+                    line-height: 31px;
+                    overflow: hidden;
+                    vertical-align: top;
+                    text-align: center;
+                    cursor: pointer;
+                    .dl_bem{
+                        float: left;
+                        width: 20px;
+                        height: 18px;
+                        margin: 6px 2px 2px 0;
+                        overflow: hidden;
+                        background: url(../image/button2.png)  no-repeat 0 9999px;
+                        background-position: 0 -1622px;
+                    }
+                }
+            }
+            .dl_djia{
+                margin-right: 5px;  
+                width: 31px;
+                margin-left: -5px;
+                padding-right: 0;
+                background: url(../image/button2.png)  no-repeat 0 9999px;
+                background-position: 0 -1588px;
+                padding: 0 5px 0 0;
+                white-space: nowrap;
+                float: left;
+                height: 31px;
+                line-height: 30px;
+                min-width: 23px;
+                cursor: pointer;
+            }
+            .dl_dshow{
+                margin-right: 6px;
+                background: url(../image/button2.png)  no-repeat 0 9999px;
+                background-position: right -1020px;
+                color: #333;
+                padding: 0 4px 0 0;
+                white-space: nowrap;
+                float: left;
+                height: 31px;
+                line-height: 30px;
+                min-width: 23px;
+                cursor: pointer;
+                i{
+                    padding-right: 2px;
+                    padding-left: 28px;
+                    padding: 0 7px 0 36px;
+                    float: left;
+                    height: 31px;
+                    line-height: 30px;
+                    min-width: 23px;
+                    cursor: pointer;
+                    background: url(../image/button2.png)  no-repeat 0 9999px;
+                    background-position: 0px -977px;
+                }
+            }
+            .dl_dqu{
+                float: right;
+                .dl_dqus{
+                    display: block;
+                    color: #333;
+                    font-size: 12px;
+                    cursor: pointer;
+                    font-family: simsun,\5b8b\4f53;
+                    height: 31px;
+                    line-height: 31px;
+                    overflow: hidden;
+                    height: 31px;
+                    line-height: 31px;
+                    overflow: hidden;
+                    background: url(../image/button2.png) no-repeat 0 9999px;;
+                    background-position: right -100px;
+                    i{
+                        display: block;
+                        color: #333;
+                        padding: 0 15px 0 20px;
+                        height: 31px;
+                        line-height: 31px;
+                        overflow: hidden;
+                        background: url(../image/button2.png) no-repeat 0 9999px;;
+                        background-position: 0 -59px;
+                        .dl_redan{
+                            font-style: normal;
+                            text-align: left;
+                            font-size: inherit;
+                            line-height: 31px;
+                        }
+                        .dl_xiabiao{
+                            margin-left: 6px;
+                            background: url(../image/icon3.png) no-repeat 0 0;
+                            line-height: 31px;
+                            width: 8px;
+                            height: 5px;
+                            display: inline-block;
+                            overflow: hidden;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dl_bfood{
+    overflow: hidden;
+    .dl_dfoods{
+        &::after{
+            clear: both;
+            content: ".";
+            overflow: block;
+            visibility: hidden;
+            height: 0;
+        }
+        .dl_fgequ{
+            
+            .dl_remen{
+                .dl_tal{
+                    border: none;
+                    width: 100%;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    table-layout: fixed;
+                    tr:nth-child(odd){
+                        background-color: #f7f7f7;
+                    }
+                    .d_fming{
+                        width: 74px;
+                        padding: 6px 10px;
+                        line-height: 18px;
+                        text-align: left;
+                        background: url(../image/table.png) no-repeat 0 9999px;;
+
+                       div{
+                        height: 18px;
+                        line-height: 18px;
+                        text-align: left;
+                        .d_biao{
+                            float: right;
+                            width: 17px;
+                            height: 17px;
+                            cursor: pointer;
+                            background: url(../image/table.png) no-repeat 0 9999px;;
+                            background-position: 0 -103px;
+                        }
+                        .d_shu{
+                            width: 25px;
+                            margin-left: 5px;
+                            color: #999;
+                        }
+                       }
+                    }
+                    .d_one{
+                        overflow: hidden;
+                        .d_two{
+                            float: left;
+                            width: 100%;
+                            .d_therr{
+                                height: 18px;
+                                margin-right: 20px;
+                                .d_text{
+                                    position: relative;
+                                    display: inline-block;
+                                    padding-right: 25px;
+                                    margin-right: -25px;
+                                    max-width: 99%;
+                                    height: 20px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    a{
+                                           display: block;
+                                           float: left;
+                                           line-height: 17px;
+                                    }
+                                    a:hover{
+                                        text-decoration: underline;
+                                    }
+                                    span{
+                                        width: 23px;
+                                        margin: 1px 0 0 2px;
+                                        height: 17px;
+                                        float: left;
+                                        overflow: hidden;
+                                        text-indent: -999px;
+                                        cursor: pointer;
+                                        background: url(../image/table.png) no-repeat 0 9999px;;
+                                        background-position: 0 -151px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .d_shijian{
+                        width: 69px;
+                        padding: 6px 10px;
+                        line-height: 18px;
+                        text-align: left;
+                        background: url(../image/table.png) no-repeat 0 9999px;
+                        span{
+                            color: #666;
+                            line-height: 17px;
+                        }
+                    }
+                    .d_cidan{
+                        width: 20%;
+                        padding: 6px 10px;
+                        div{
+                            width: 100%;
+                            position: relative;
+                            zoom: 1;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            a{
+                                white-space: nowrap;
+                            }
+                            a:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

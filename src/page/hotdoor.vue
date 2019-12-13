@@ -204,52 +204,52 @@
                        <li>
                            <a href="">
                                <div class="lr_ultop">
-                                   <img src="http://p2.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                                   <img src="http://p1.music.126.net/1EN_iqQWU_E3DafzEOh3cA==/3302932937408956.jpg?param=62y62" alt="">
                                </div>
                                <div class="lr_ulfloor">
                                    <h4>
-                                       <span>张惠妹aMEI</span>
+                                       <span>Fine乐团</span>
                                    </h4>
-                                   <p class="lr_uf_p">台湾歌手张惠妹</p>
+                                   <p class="lr_uf_p">独立音乐人</p>
                                </div>
                            </a>
                        </li>
                        <li>
                            <a href="">
                                <div class="lr_ultop">
-                                   <img src="http://p2.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                                   <img src="http://p1.music.126.net/ZuktZvjcxpYBjcWC3gmbPg==/19027048718765608.jpg?param=62y62" alt="">
                                </div>
                                <div class="lr_ulfloor">
                                    <h4>
-                                       <span>张惠妹aMEI</span>
+                                       <span>萬曉利</span>
                                    </h4>
-                                   <p class="lr_uf_p">台湾歌手张惠妹</p>
+                                   <p class="lr_uf_p">民谣歌手的代表人物</p>
                                </div>
                            </a>
                        </li>
                        <li>
                            <a href="">
                                <div class="lr_ultop">
-                                   <img src="http://p2.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                                   <img src="http://p1.music.126.net/v_zYgE9kmAwVGWV2c8hFxA==/7943971513291094.jpg?param=62y62" alt="">
                                </div>
                                <div class="lr_ulfloor">
                                    <h4>
-                                       <span>张惠妹aMEI</span>
+                                       <span>音乐人赵雷</span>
                                    </h4>
-                                   <p class="lr_uf_p">台湾歌手张惠妹</p>
+                                   <p class="lr_uf_p">民谣歌手</p>
                                </div>
                            </a>
                        </li>
                        <li>
                            <a href="">
                                <div class="lr_ultop">
-                                   <img src="http://p2.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                                   <img src="http://p1.music.126.net/6wPGl_ddgAbJTx5kOohcyw==/109951163892302996.jpg?param=62y62" alt="">
                                </div>
                                <div class="lr_ulfloor">
                                    <h4>
-                                       <span>张惠妹aMEI</span>
+                                       <span>王三溥</span>
                                    </h4>
-                                   <p class="lr_uf_p">台湾歌手张惠妹</p>
+                                   <p class="lr_uf_p">音乐人</p>
                                </div>
                            </a>
                        </li>
@@ -279,50 +279,50 @@
                        </li>
                         <li>
                            <a class="lr_f_ula" href="">
-                               <img src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                               <img src="http://p1.music.126.net/y5-sM7tjnxnu_V9LWKgZlw==/7942872001461517.jpg?param=40y40" alt="">
                            </a>
                            <div class="lr_f_uld">
                                <p class="lr_f_pm">
-                                     <a href="">陈立</a>
+                                     <a href="">DJ艳秋</a>
                                      <i></i>
                                </p>
-                               <p class="lr_f_px">心理学家、美食家陈立教授</p>
+                               <p class="lr_f_px">著名音乐节目主持人</p>
                            </div>
                        </li>
                         <li>
                            <a class="lr_f_ula" href="">
-                               <img src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                               <img src="http://p1.music.126.net/6cc6lgOfQTo6ovNnTHPyJg==/3427177769086282.jpg?param=40y40" alt="">
                            </a>
                            <div class="lr_f_uld">
                                <p class="lr_f_pm">
-                                     <a href="">陈立</a>
+                                     <a href="">国家大剧院古典音乐频道</a>
                                      <i></i>
                                </p>
-                               <p class="lr_f_px">心理学家、美食家陈立教授</p>
+                               <p class="lr_f_px">国家大剧院古典音乐官方</p>
                            </div>
                        </li>
                         <li>
                            <a class="lr_f_ula" href="">
-                               <img src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                               <img src="http://p1.music.126.net/xa1Uxrrn4J0pm_PJwkGYvw==/3130309604335651.jpg?param=40y40" alt="">
                            </a>
                            <div class="lr_f_uld">
                                <p class="lr_f_pm">
-                                     <a href="">陈立</a>
+                                     <a href="">谢谢收听</a>
                                      <i></i>
                                </p>
-                               <p class="lr_f_px">心理学家、美食家陈立教授</p>
+                               <p class="lr_f_px">南京电台主持人王馨</p>
                            </div>
                        </li>
                         <li>
                            <a class="lr_f_ula" href="">
-                               <img src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                               <img src="http://p1.music.126.net/slpd09Tf5Ju82Mv-h8MP4w==/3440371884651965.jpg?param=40y40" alt="">
                            </a>
                            <div class="lr_f_uld">
                                <p class="lr_f_pm">
-                                     <a href="">陈立</a>
+                                     <a href="">DJ晓苏</a>
                                      <i></i>
                                </p>
-                               <p class="lr_f_px">心理学家、美食家陈立教授</p>
+                               <p class="lr_f_px">独立DJ，CRI环球旅游广播</p>
                            </div>
                        </li>
                    </ul>
@@ -963,6 +963,7 @@ export default {
       observeParents: true
     });
   }
+  
 };
 </script>
 

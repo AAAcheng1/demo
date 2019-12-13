@@ -6,58 +6,58 @@
         <ul class="z-ul">
           <li>
             <span class="span">
-              <a class="z-fx">
-                <em>发现音乐</em>
-                <span class="z-sj"></span>
-              </a>
+               <router-link  @click.native="dd(1)" :class="dian == 1 ? 'z-fx':''" to="/">
+                  <em>发现音乐</em>
+                <span :class="dian == 1 ? 'z-sj':''" ></span>
+              </router-link>
             </span>
           </li>
           <li>
             <span class="span">
-              <a>
-                <em>我的音乐</em>
-                <span class="z-sj" style="display:none"></span>
-              </a>
+              <router-link  @click.native="dd(2)" :class="dian == 2 ? 'z-fx':''" :to="{path:'/my'}">
+                 <em>我的音乐</em>
+                 <span :class="dian == 2 ? 'z-sj':''"  ></span>
+              </router-link>
             </span>
           </li>
           <li>
             <span class="span">
-              <a>
-                <em>朋友</em>
-                <span class="z-sj" style="display:none"></span>
-                <i class="z-crile"></i>
-              </a>
+               <router-link  @click.native="dd(3)" :class="dian == 3 ? 'z-fx':''" :to="{path:'/friend'}">
+                  <em>朋友</em>
+                  <span :class="dian == 3 ? 'z-sj':''" ></span>
+                  <i class="z-crile"></i>
+              </router-link>
             </span>
           </li>
           <li>
             <span class="span">
-              <a>
-                <em>商城</em>
-                <span class="z-sj" style="display:none"></span>
-              </a>
+               <router-link  @click.native="dd(4)" :class="dian == 4 ? 'z-fx':''" :to="{path:'/product'}" target="_blank" >
+                  <em>商城</em>
+                <span :class="dian == 4 ? 'z-sj':''" ></span>
+              </router-link>
             </span>
           </li>
           <li>
             <span class="span">
-              <a>
+               <router-link  @click.native="dd(5)" :class="dian == 5 ? 'z-fx':''" to="">
                 <em>音乐人</em>
-                <span class="z-sj" style="display:none"></span>
-              </a>
+                <span :class="dian == 5 ? 'z-sj':''" ></span>
+              </router-link>
             </span>
           </li>
           <li>
             <span class="span">
-              <a>
+              <router-link  @click.native="dd(6)" :class="dian == 6 ? 'z-fx':''" :to="{path:'/download'}">
                 <em>下载客户端</em>
-                <span class="z-sj" style="display:none"></span>
+                <span :class="dian == 6 ? 'z-sj':''" ></span>
                 <i class="z-hot"></i>
-              </a>
+              </router-link>
             </span>
           </li>
         </ul>
         <div class="z-sculputer">
-          <a class="z-login">登录</a>
-          <div class="z-login-list">
+          <a class="z-login ">登录</a>
+          <div class="z-login-list z-denglu">
             <ul>
               <li>
                 <a>
@@ -112,40 +112,41 @@
         </div>
       </div>
     </div>
-    <div class="z-header-bottom">
+    <div class="z_tbu"  v-if="dian != 1 "></div>
+    <div class="z-header-bottom" v-if="dian == 1 ">
       <div class="z-header-bottom-center">
         <ul class="z-nav">
           <li>
-            <a>
-              <em>推荐</em>
-            </a>
+            <router-link @click.native="tjian(1)"  :to="{path:'/'}">
+             <em :class="tjianw==1? 'em_active':''">推荐</em>
+            </router-link>
           </li>
           <li>
-            <a>
-              <em>排行榜</em>
-            </a>
+            <router-link @click.native="tjian(2)"  :to="{path:'/discover/toplist'}">
+              <em :class="tjianw==2? 'em_active':''">排行榜</em>
+            </router-link>
           </li>
           <li>
-            <a>
-              <em>歌单
+            <router-link  @click.native="tjian(3)"  :to="{path:'/discover/playlist'}"  >
+              <em :class="tjianw==3? 'em_active':''">歌单
                 <span class="z-hr"></span>
               </em>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a>
-              <em>主播电台</em>
-            </a>
+            <router-link  @click.native="tjian(4)"  :to="{path:'/discover/djradio'}" >
+                <em :class="tjianw==4? 'em_active':''">主播电台</em>
+            </router-link>
           </li>
           <li>
-            <a>
-              <em>歌手</em>
-            </a>
+            <router-link  @click.native="tjian(5)"  :to="{path:'/discover/artist'}" >
+                 <em :class="tjianw==5? 'em_active':''">歌手</em>
+            </router-link>
           </li>
           <li>
-            <a>
-              <em>新碟上架</em>
-            </a>
+             <router-link  @click.native="tjian(6)"  :to="{path:'/discover/playlist'}" >
+                <em :class="tjianw==6? 'em_active':''">新碟上架</em>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -155,11 +156,43 @@
 
 <script>
 export default {
+   data() {
+     return {
+       dian:1,
+       tjianw:1,
+       luyou:['/','/discover/toplist','/discover/playlist','','/discover/artist','']
+     }
+   },
+   methods: {
+     dd(val){
+       this.dian = val
+     },
+     tjian(val){
+      this.tjianw = val;
+     }
+   },
+   mounted() {
+       console.log(this.$route.path)
+       this.tjianw = this.luyou.indexOf(this.$route.path)  + 1
+       console.log(this.tjianw)
+   },
+  watch:{
+    $route(to,from){
 
+    }
+},
 }
+
 </script>
 
-<style>
+<style scoped>
+.z_tbu{
+  width: 100%;
+  height: 5px;
+  height: 5px;
+  box-sizing: border-box;
+  background-color: #C20C0C;
+}
 li {
   list-style: none;
 }
@@ -169,7 +202,8 @@ a {
 }
 .z-header {
   width: 100%;
-  height: 104.98px;
+  /* height: 74.98px; */
+  /* overflow: hidden; */
 }
 .z-header-top {
   position: relative;
@@ -197,6 +231,13 @@ a {
   height: 34px;
   margin: 0 auto;
 }
+.z-header::after{
+   clear: both;
+   content: ".";
+   display: block;
+   visibility: hidden;
+   height: 0px;
+}
 .z-logo {
   float: left;
   width: 176px;
@@ -217,6 +258,10 @@ a {
 .z-ul li:hover {
   background: #000;
 }
+.z-ul li:hover .span em{
+  color: #fff;
+}
+
 .z-ul li .span {
   float: left;
   height: 70px;
@@ -255,6 +300,13 @@ a {
   background: #000;
   text-decoration: none;
   color: #fff;
+}
+.span .z-fx  em{
+   color: #fff;
+}
+.span em{
+  font-weight: 400;
+  color: #ccc;
 }
 .z-crile {
   display: block;
@@ -302,8 +354,10 @@ a {
   color: #ccc;
   border-radius: 20px;
   font-size: 12px;
+  text-align: center;
 }
 .z-autor:hover{
+  text-decoration: none;
   border: 1px solid #fff;
 }
 .z-search {
@@ -358,14 +412,16 @@ a {
   color: #fff;
   font-size: 12px;
   position: relative;
+  line-height: 21px;
 }
 .z-nav li a em {
   display: inline-block;
   height: 20px;
   padding: 0 13px;
   margin: 7px 17px 0;
+  font-weight: 400
 }
-.z-nav li:nth-child(1) a em {
+.em_active{
   border-radius: 20px;
   line-height: 21px;
   background: #9b0909;
@@ -449,5 +505,8 @@ a {
   top: 2px;
   background: url("../../static/image/white-r-icon@3x.png") no-repeat;
   background-size: cover;
+}
+.z-denglu{
+  z-index: 999999;
 }
 </style>

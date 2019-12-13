@@ -1,0 +1,471 @@
+.s-container{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+}
+.s-bd{
+    width: 980px;
+    min-height: 700px;
+   
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+}
+.s-wrap{
+    padding: 40px
+}
+.s-rdtype{
+    margin-bottom:20px ;
+  position: relative;
+}
+.s-boxes{
+    overflow: hidden;
+    max-height: 194px;
+}
+.s-rdtype .s-muti{
+    height: 194px;
+}
+
+.s-rdtype .s-boxes ul{
+    margin-left: -33px;
+}
+.s-rdtype .s-icon{
+    width: 48px;
+    height: 48px;
+    margin: 2px auto 0;
+    background-position: 0 0
+}
+.s-rdtype .s-zei .s-icon {
+        background-position: -48px 0;
+    }
+
+.s-rdtype a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    color: #888;
+    background: url(../../static/image/radio_bg.png) no-repeat;
+    background-position: 0 9999px;
+}
+.s-rdtype .s-zei{
+    background-position: -70px 0;
+    color: #d35757;
+}
+.s-rdtype a:hover{
+    background-position: 0 0;
+    text-decoration: none;
+}
+
+.s-rdtype li {
+    float: left;
+    margin: 0 0 25px 33px;
+}
+.s-rdtype .s-turn{
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 30px;
+    margin-top: -15px;
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.s-turn{
+    background: url(../../static/image/radio_slide.png) no-repeat;
+}
+.s-rdtype .s-turn-left{
+    left: -26px;
+    background-position: 0 -30px;
+}
+.s-rdtype .s-dis{
+    opacity: 0.08;
+}
+.s-rdtype .s-turn-right{
+    right: -26px;
+    background-position: -30px -30px
+}
+.s-wrap .s-rdtype .s-dotpage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: 0;
+}
+.s-wrap .s-rdtype .s-dotpage .s-dot{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: 0 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    background: url(../../static/image/radio_slide.png) no-repeat;
+}
+.s-wrap .s-rdtype .s-dotpage .s-dot.s-curr{
+    background-position: -30px 0;
+}
+.s-rdtj-top{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.s-rdtj-top .s-blk {
+    width: 426px;
+}
+.s-rdtj {
+    float: left;
+}
+.s-rdtj-top .s-blk .s-title{
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+.s-title h3{
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+.s-title .more{
+    float: right;
+    margin-top: 14px;
+    color: #666
+}
+.s-radio .s-toplist {
+    height: 600px;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+}
+ .s-toplist .s-itm {
+    width: 424px;
+    height: 40px;
+    padding: 10px 0;
+    line-height: 40px;
+}
+.s-plylist .s-itm {
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+ .s-toplist .s-itm .s-cvr{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: block;
+    float: left
+}
+.s-cvr img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.s-cvr .ply{
+    position: absolute;
+    display: none;
+    _display: block;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin: -11px 0 0 -11px;
+   
+    background: url(../../static/image/iconall.png);
+    background-position: 0 -85px;
+}
+.s-cnt{
+    width: 254px;
+    margin: 1px 0 0 10px;
+    line-height: 20px;
+    float: left;
+}
+.s-thide{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-align: left;
+}
+.s-thide a{
+    color:  #333;
+}
+.s-thide a:hover{
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+.s-thide .s-f4{
+    color: #999
+}
+.s-thide .s-f4:hover{
+    color: #999
+}
+.s-tag{
+    margin: 1px 0 0 10px;
+}
+
+.s-type {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    height: 16px;
+    overflow: hidden;
+    padding: 0 6px;
+    border: 1px solid #999;
+    line-height: 16px;
+    *line-height: 18px;
+    color: #999;
+    vertical-align: middle;
+    font-size: 12px;
+}
+a.s-type:hover {
+    border-color: #666;
+    color: #666;
+    text-decoration: none;
+}
+.s-plylist .s-itm:hover {
+    background: #eee;
+}
+.s-plylist .s-bg {
+    background: #f7f7f7;
+}
+.s-flr{
+    float: right;
+}
+.s-flr .s-title h3 a:hover{
+    text-decoration: underline;
+}
+ .s-rank {
+    width: 47px;
+    margin: 6px 0 0 0;
+    text-align: center;
+    line-height: normal;
+    float: left;
+}
+.s-rank .s-red {
+    color: #da4545;
+}
+ .s-toplist .s-rank em {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.s-fs1 {
+    font-size: 14px;
+}
+.s-rnk{
+    line-height: normal;
+    font-size: 10px;
+}
+.s-rnk i {
+    margin: -1px 2px 0 0;
+    *margin-top: 0;
+    _margin-top: 1px;
+    vertical-align: middle;
+}
+.s-rnk .s-icn, .s-title-1 .s-out .s-icon {
+    background: url(../../static/image/icon.png) no-repeat ;
+}
+
+.s-icn-72, .s-icn-73, .s-icn-74 {
+    width: 6px;
+    height: 6px;
+    background-position: -74px -274px!important;
+}
+.s-icn, .s-icn2, .s-icn3 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.s-flr .s-itm .s-cvr {
+    margin-left: 0;
+}
+.s-flr .s-itm  .s-cnt {
+    width: 208px;
+}
+.s-flr .s-itm .s-hot {
+    margin-top: 16px;
+    float: left;
+}
+.u-hot, .u-hot i {
+    display: block;
+    height: 8px;
+}
+
+.u-icn3, .u-hot, .u-hot i {
+    background: url(../../static/image/table.png) no-repeat 0 9999px;
+}
+.s-fl{
+    float: left;
+}
+.u-hot {
+    display: block;
+    position: relative;
+    width: 100px;
+    background-position: 0 -240px;
+    line-height: normal;
+}
+.u-hot i {
+    overflow: hidden;
+    padding: 0 4px;
+    background-position: right -318px;
+}
+.u-hot i i {
+    margin-left: -4px;
+    padding: 0 0 0 4px;
+    background-position: 0 -304px;
+}
+ .s-rdmore {
+    margin-top: 35px;
+    overflow: hidden;
+}
+.s-title {
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+.s-title h3 {
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.s-title .s-more {
+    float: right;
+    margin-top: 14px;
+}
+.s-rdilist {
+    margin-left: -30px;
+}
+ .s-rdmore .s-rdilist li {
+    float: left;
+    width: 435px;
+    height: 120px;
+    margin-left: 30px;
+    _margin-left: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+ .s-rdilist .s-cvr {
+    margin-right: -200px;
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+.u-cover {
+    position: relative;
+    display: block;
+}
+.s-fl {
+    float: left;
+}
+ .s-rdilist .s-cnt {
+    margin-left: 140px;
+    text-align: left;
+}
+
+ .s-rdilist h3 {
+        margin: 16px 0 20px;
+    }
+    .s-ff3 {
+        font-size: 18px;
+    }
+     .s-rdilist .note {
+        margin-bottom: 6px;
+        line-height: 20px;
+    }
+    .s-fc4, a.s-fc4:hover {
+        color: #999;
+    }
+.s-new{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.s-rdilist{
+    margin: 16px 0 0 -37px;
+    overflow: hidden;
+}
+ .s-new .s-rdilist li {
+    float: left;
+    width: 150px;
+    margin-left: 36px;
+}
+.s-cover-rdi2 {
+    width: 150px;
+    height: 150px;
+}
+.s-cover {
+    position: relative;
+    display: block;
+}
+.s-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ .s-new .s-rdilist h3 {
+    text-align: left;
+    margin: 13px 0 6px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.s-new .s-rdilist p {
+    line-height: 18px;
+}
+p{
+    text-align: left;
+}
+.s-note{
+    
+        margin-bottom: 6px;
+        line-height: 20px;
+    
+}
+
+.u-icn-26, .s-icn-27, .u-icn-28, .u-icn-29 {
+    width: 14px;
+    height: 15px;
+    background-position: -35px -300px;
+}
+
+.s-icn, .s-icn2, .s-icn3 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.s-icn {
+    background: url(../../static/image/icon.png) no-repeat 0 9999px;
+}
+.s-icn-27 {
+    background-position: -50px -300px;
+}
+em, i {
+    font-style: normal;
+    text-align: left;
+    font-size: inherit;
+}
+.s-sep{
+    margin-left: 5px;
+}
+.s-title .tab-r {
+    float: right;
+}
+.s-title .s-tab {
+    float: right;
+    margin: 12px 0 0 20px;
+}
+.s-title .s-tab a.z-sel {
+    color: #c20c0c;
+}
+.s-title .s-tab a {
+    color: #666;
+}
+.s-title .s-1tab .line {
+    margin: 0 10px;
+    color: #c7c7c7;
+}

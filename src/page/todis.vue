@@ -53,6 +53,27 @@
               </div>
             </div>
           </div> -->
+           <!-- 精彩评论的数据渲染 -->
+          <div v-for="(item,index) in kk" :key="index"  class="z-itm">
+            <div class="z-itm-header">
+              <a>
+                <img :src="item.img" alt="">
+              </a>
+            </div>
+            <div class="z-itm-text">
+              <div class="z-cnt"><a class="sd">{{item.name}}</a><a>:{{item.text}}</a></div>
+              <div class="z-rp">
+                <div class="z-time">07:23</div>
+                <a> <i></i>{{item.num}}</a>
+                <span>|</span>
+                <a class="sa">回复</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="z-cmmts">
+          <h3>最新评论(156897)</h3>
+          <!-- 最新评论的数据渲染 -->
           <div v-for="(item,index) in todisL" :key="index"  class="z-itm">
             <div class="z-itm-header">
               <a>
@@ -69,29 +90,6 @@
               </div>
             </div>
           </div>
-          <!-- 精彩评论的数据渲染 -->
-        </div>
-        <div class="z-cmmts">
-          <h3>最新评论(156897)</h3>
-          <div class="z-itm">
-            <div class="z-itm-header">
-              <a>
-                <img
-                  src="https://p2.music.126.net/LpD4YFxwVp1dLZbm2lFgog==/109951164215904183.jpg?param=50y50"
-                />
-              </a>
-            </div>
-            <div class="z-itm-text">
-              <div class="z-cnt"><a class="sd">橙优优</a><a>：iu冲鸭</a></div>
-              <div class="z-rp">
-                <div class="z-time">07:23</div>
-                <a> <i></i>(22) </a>
-                <span>|</span>
-                <a class="sa">回复</a>
-              </div>
-            </div>
-          </div>
-          <!-- 最新评论的数据渲染 -->
         </div>
         <div class="z-show" v-show="show">
           <div class="z-show-login">
@@ -158,6 +156,7 @@
           <div class="block">
             <span class="demonstration">直接前往</span>
             <el-pagination
+              class="fen_ye"
               @size-change="handleSizeChange"
               @current-change="handleCurrentChange"
               :current-page.sync="currentPage3"
@@ -179,9 +178,10 @@ export default {
   data() {
     return {
       show: false,
-      currentPage3: 5,
+      currentPage3: 1,
       todisL:"",
-      a:""
+      a:"",
+      kk:""
     };
   },
   computed: {
@@ -197,14 +197,25 @@ export default {
     },
     handleCurrentChange(val) {
      this.getitem(val)
+     this.kk = this.newtodis.slice(8)
+     console.log(this.kk)
      this.todisL = this.newtodis
      console.log(`当前页: ${val}`);
     },
-  }
+  },
+  mounted() {
+     this.getitem(1)
+     this.todisL = this.newtodis;
+     this.kk = this.newtodis.slice(8)
+  },
 };
 </script>
 
 <style scoped>
+.fen_ye{
+  margin:  0 auto;
+  text-align: center;
+}
 li {
   list-style: none;
 }

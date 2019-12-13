@@ -5,5 +5,10 @@ export default {
         }else{
             commit("goItem",id)
         }
+    },
+    adds({ commit }, val) {
+        commit("app")
+        commit("changePage")
+
     }
 }

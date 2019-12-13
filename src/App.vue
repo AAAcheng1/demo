@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <!-- <img src="./assets/logo.png"> -->
-    <router-view name="header"/>
+    <router-view name="header"></router-view>
     <router-view></router-view>
-    <router-view name="floor"/>
+    <router-view name="floor"></router-view>
   </div>
 </template>
 
